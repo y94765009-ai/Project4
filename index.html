@@ -7,26 +7,21 @@
   <title>بوابة مشروع التخرج</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%230F766E'/%3E%3Cpath d='M12 6 4 10l8 4 8-4-8-4Z' fill='none' stroke='white' stroke-width='1.6' stroke-linejoin='round'/%3E%3C/svg%3E">
   <style>
-    html, body { margin: 0; height: 100%; }
-    body { display: grid; place-items: center; background: #EEF3F4; color: #1F2A30;
-           font-family: "Segoe UI", Tahoma, Arial, sans-serif; text-align: center; padding: 16px; box-sizing: border-box; }
-    @media (prefers-color-scheme: dark) { body { background: #0F171D; color: #E6EDF0; } }
-    h1 { font-size: 1.25rem; margin: 0 0 8px; }
-    p { margin: 0 0 20px; opacity: .75; }
-    a { display: inline-block; background: #0F766E; color: #fff; text-decoration: none;
-        padding: 12px 28px; border-radius: 10px; font-weight: 700; }
-    a:focus-visible { outline: 3px solid #C9A227; outline-offset: 3px; }
+    html, body { margin: 0; height: 100%; background: #EEF3F4; }
+    @media (prefers-color-scheme: dark) {
+      html, body { background: #0F171D; }
+    }
+    iframe {
+      display: block;
+      width: 100%;
+      height: 100vh;
+      height: 100dvh;
+      border: 0;
+    }
   </style>
 </head>
 <body>
-  <main>
-    <h1>بوابة مشروع التخرج</h1>
-    <p>جاري فتح البوابة…</p>
-    <!-- لو ما اتفتحتش لوحدها، اضغطي الزرار -->
-    <a id="go" href="https://script.google.com/macros/s/AKfycbxN1ACtuxQN9Cx-D8EJETSGUFaZDZnrUWaiwS9SEyw7dOyVo1fvD1KMlolXIC9AYHs/exec">افتح البوابة</a>
-  </main>
-  <script>
-    location.replace(document.getElementById('go').href);
-  </script>
+  <!-- بدّلي النص اللي جوه علامتي التنصيص برابط البوابة (رابط Apps Script اللي بينتهي بـ /exec) -->
+  <iframe src="https://script.google.com/macros/s/AKfycbxN1ACtuxQN9Cx-D8EJETSGUFaZDZnrUWaiwS9SEyw7dOyVo1fvD1KMlolXIC9AYHs/exec" title="بوابة مشروع التخرج" allow="clipboard-write"></iframe>
 </body>
 </html>
